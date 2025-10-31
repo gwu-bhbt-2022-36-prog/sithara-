@@ -5,6 +5,21 @@ body {
     background-color: #f9f9f9;
     color: #333;
     line-height: 1.6;
+
+}
+.dark-mode{
+    background-color: #222;
+    color: #f8f6f6;
+}
+.dark-mode header {
+    background-color: #333;
+}
+.dark-mode footer {
+    background-color: #444;
+}
+.dark-mode .card {
+    background-color: #222;
+    border-color: #333;
 }
 
 /* Container */
@@ -58,8 +73,21 @@ footer {
     color: #666;
 }
 img{
-    width: 25%;
+    width: 15%;
+    display: block;
+    margin: 0 auto;
 
 }
-        
+.card-wrap{
+    display: flex;
+    flex-wrap: wrap;
+}
+.project-card{
+    height: 100px;
+    width: 200px;
+    text-align: center;
+    background-color: aqua;
+    margin:  1rem ;
+    margin-right: 1rem;
+}
 
