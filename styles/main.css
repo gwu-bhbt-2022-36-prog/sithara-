@@ -91,3 +91,54 @@ img{
     margin-right: 1rem;
 }
 
+/* Contact form styles */
+.contact-form {
+    margin-top: 1rem;
+}
+.contact-form .row {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+.contact-form .field {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1rem;
+}
+.contact-form .field.half {
+    flex: 1 1 45%;
+}
+.contact-form label {
+    font-weight: 600;
+    margin-bottom: 0.35rem;
+}
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form textarea {
+    padding: 0.65rem 0.75rem;
+    border: 1px solid #d1d5db;
+    border-radius: 8px;
+    font-size: 1rem;
+    background: #fff;
+}
+.contact-form textarea { resize: vertical; min-height: 120px; }
+.contact-form .actions { display: flex; align-items: center; gap: 1rem; }
+.btn {
+    background: linear-gradient(90deg,#6a11cb,#2575fc);
+    color: #fff;
+    padding: 0.6rem 1rem;
+    border: none;
+    border-radius: 999px;
+    cursor: pointer;
+    font-weight: 700;
+}
+.btn:disabled { opacity: 0.6; cursor: default; }
+.form-status { font-size: 0.95rem; color: #333; }
+.form-status.success { color: #0a6b1a; }
+.form-status.error { color: #b91c1c; }
+
+@media (max-width:700px) {
+    .container { width: 92%; margin: 30px auto; padding: 18px; }
+    .contact-form .field.half { flex-basis: 100%; }
+}
+

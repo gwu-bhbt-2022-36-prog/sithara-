@@ -78,6 +78,59 @@
     </section>
 </main>
 
+<section id="contact">
+    <div class="container">
+        <h2>Contact Me</h2>
+        <p class="lead">Have a question or want to collaborate? Send a message — I'll reply soon.</p>
+
+        <form action="handle_form.php" method="post" id="contactForm" class="contact-form" novalidate>
+            <div class="row">
+                <div class="field half">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" required maxlength="100" placeholder="Your full name">
+                </div>
+                <div class="field half">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required maxlength="150" placeholder="you@example.com">
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="field half">
+                    <label for="phone">Telephone</label>
+                    <input type="tel" id="phone" name="phone" maxlength="30" placeholder="+1 555 555 5555" pattern="[0-9+()\-\s]+">
+                </div>
+                <div class="field half">
+                    <label for="gender">Gender</label>
+                    <select id="gender" name="gender">
+                        <option value="">Prefer not to say</option>
+                        <option value="female">Female</option>
+                        <option value="male">Male</option>
+                        <option value="nonbinary">Non-binary</option>
+                        <option value="other">Other</option>
+                    </select>
+                </div>
+            </div>
+
+            <div style="display:none;" aria-hidden="true">
+                <!-- Honeypot field to deter bots -->
+                <label for="company">Company (leave empty)</label>
+                <input type="text" id="company" name="company" autocomplete="off">
+            </div>
+
+            <div class="field">
+                <label for="message">Message</label>
+                <textarea id="message" name="message" rows="6" required maxlength="2000" placeholder="Tell me about your project..."></textarea>
+            </div>
+
+            <div class="actions">
+                <button type="submit" class="btn">Send message</button>
+                <div id="formStatus" class="form-status" role="status" aria-live="polite"></div>
+            </div>
+        </form>
+    </div>
+</section>
+
 <header>
     <h1>sithara sathsarani</h1>
     <nav>...</nav>
